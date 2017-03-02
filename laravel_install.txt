@@ -1,3 +1,13 @@
 1. composert install
 
-2. composer create-project --prefer-dist laravel/laravel /home/hosting/laravel
+2. # composer create-project --prefer-dist laravel/laravel /home/hosting/laravel
+
+3. apache virtual host home_directory set
+   /home/hosting/laravel/public
+  
+
+4. permission set
+   # chmod 777 -R storage/logs/
+   # chmod 777 -R storage/framework/
+
+ 
