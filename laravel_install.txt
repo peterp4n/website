@@ -9,5 +9,6 @@
 4. permission set
    # chmod 777 -R storage/logs/
    # chmod 777 -R storage/framework/
-
+   # chmod 777 -R bootstrap/cache
+ 
  
