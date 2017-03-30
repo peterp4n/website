@@ -11,4 +11,26 @@
    # chmod 777 -R storage/framework/
    # chmod 777 -R bootstrap/cache
  
+5. config/app.php setting 
+   timezone
+   locale
+   Cache
+   Database
+   Session
+
  
+5. application key generate 
+   # php artisan key:generate
+   
+   
+   
+
+6. apache setting
+   mod_rewrite comment remove
+   /*
+   Options +FollowSymLinks
+   RewriteEngine On
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteRule ^ index.php [L]
+   *
