@@ -1,3 +1,22 @@
+PHP 에러로그 확인하기
+
+아파치는 다음과 같은 형태로 로그 파일이 생성된다.
+
+/var/log/httpd/호스트명-access_log
+/var/log/httpd/호스트명-error_log
+
+쉘에서 실행할 때는 ini 파일에서 로그 파일의 위치를 알아낼 수 있다.
+
+# 어떤 php.ini 파일을 불러오는지 확인
+php --ini
+Loaded Configuration File:         /etc/php.ini
+
+# error_log 설정 확인
+cat /etc/php.ini | grep error_log
+error_log = /home/test/php_errors.log
+
+
+
 phar로 빌드할 때 에러 발생
 
 phar 파일을 만들 때, 파일을 압축하는 부분에서 다음 에러가 발생했다.
