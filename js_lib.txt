@@ -1,18 +1,18 @@
 
-JavaScript 라이브러리 모음
+##########################
+### JavaScript 라이브러리 모음
+###########################
 
-보일 때마다 트윗하긴 하는데 따로 정리하기로 하고 페이지를 생성했다. 추후에는 카테고리별 또는 태그 분류가 필요할 것 같다.
+addthis - sns share tool
+https://www.addthis.com/
 
-마지막 업데이트 2015-12-08
 autocomplete 모음
-
     http://autocompletejs.com/
     http://autocomplete-js.com/
     http://atmb4u.github.io/AutoJS/
     http://hakib.github.io/MassAutocomplete/
 
 highlight.js
-
 신텍스 하일라이터. 코드 3줄이면 페이지 내 코드를 자동으로 인식해서 하일라이팅 해주는 라이브러리.
 https://highlightjs.org/
 textures.js
