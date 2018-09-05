@@ -1,7 +1,221 @@
 
-
+#####################################
+### 웹사이트 만들때 고려사항
+#####################################
 1. docker 
 
-2. composer
+2. composer - https://packagist.org/
+   guzzle
+   monolog
 
-3. 
+3. php library - https://github.com/ziadoz/awesome-php
+   https://tutorialzine.com/tag/php
+
+4. PSR 사용
+
+5. modern php
+    http://modernpug.github.io/php-the-right-way/
+
+6. Routing
+7. RESTFul
+8. Testable / Container
+9. Mocking
+
+#### 좋은 패키지 디자인 - http://phppackagechecklist.com/#1,2,3,4,5,6,7,8,9,10,11,12,13,14
+    저작권을 포함할 것
+    오픈소스여야 할 것
+    개발 관련 부분을 배포본과 분리할 것
+    PSR-4 autoloading 을 사용할 것
+    Composer 설치를 위해 Packagist에서 호스팅 할 것
+    프레임워크에 상관 없이 사용 가능할 것
+    PSR-2 코딩 표준을 준수할 것
+    깊이 있는 주석을 포함할 것
+    유의적 버전을 사용할 것
+    CI와 유닛 테스트를 사용할 것
+
+
+### https://tutorialzine.com/2016/08/20-awesome-php-libraries-for-summer-2016
+1. Monolog - https://github.com/Seldaek/monolog
+
+With Monolog you can create advanced logging systems by sending your PHP logs to files, sockets, databases, inboxes or other web services. The library has over 50 handlers for various utilities and can be integrated into frameworks such as Laravel, Symfony2 and Slim.
+
+2. PHPExcel - https://github.com/PHPOffice/PHPExcel
+
+A set of PHP classes that allow developers to easily implement spreadsheet editing in their apps. The library can read and write spreadsheet documents in a number of popular formats including Excel (both .xls and .xlsx), OpenDocument (.ods), and CSV to name a few.
+
+
+3. PHP-ML - https://github.com/php-ai/php-ml
+
+An interesting library for experimenting with Machine Learning, PHP-ML gives you an easy to use API for training your bot and making it do predictions based on input data. It offers a variety of different algorithms for pattern recognition and complex statistics calculations.
+
+
+4. Opauth - https://github.com/opauth/opauth
+
+Library for enabling users to authenticate themselves via their account in social networks or other services. Of course all the big names are available: Google, Facebook, Twitter, Github, Instagram, LinkedIn. Opauth is supported by many PHP frameworks so it can be easily integrated in most PHP apps.
+
+
+5. Whoops - https://github.com/filp/whoops
+
+Whoops greatly improves the debugging experience in PHP by displaying a detailed error page when something breaks in an app. This error page gives us the full stack trace showing the specific files and snippets of code that caused the exception, all syntax-highlighted and colorful. The Laravel framework comes with Whoops built-in.
+
+
+6. FastCache - https://github.com/PHPSocialNetwork/phpfastcache
+
+Implementing this caching system in your PHP apps is guaranteed to make them load way quicker by reducing the amount of queries sent to the database. Instead of executing every DB query, FastCache sends only the unique ones, saves them as cache, and then serves them from there for each repetition. This way if you have the same query repeated 1000 times, it will be loaded from the DB one time, the rest 999 loads will be from cache.
+ 
+7. Guzzle - https://github.com/guzzle/guzzle
+
+Guzzle is one of the best HTTP clients out there. It can handle almost any HTTP task that you throw at it: synchronous and asynchronous requests, HTTP cookies, streaming of large uploads and downloads. Working with Guzzle is really easy and the docs are well written with lots of examples and detailed explanations.
+
+
+8. Munee - https://github.com/meenie/munee
+
+Munee has lots of tricks up its sleeve: combining several CSS or JavaScript requests into one, image resizing, automatic compilation for Sass, Less and CoffeeScript files, as well as minification and Gzip compression. All of the previously mentioned processes are cached both server-side and client-side for optimal performance.
+
+
+9. Twig - https://github.com/twigphp/Twig
+
+Templating engine with a very clean "mustache" syntax that makes markup shorter and easier to write. Twig offers everything you would expect from a modern templating library: variable escaping, loops, if/else blocks, as well as a secure sandbox mode for verifying template code.
+
+
+10. Goutte - https://github.com/FriendsOfPHP/Goutte
+
+Goutte is a Web Scraper that can crawl websites and extract HTML or XML data from them. It works by sending a request to a given URL and returning a Crawler object, which allows the developer to interact with the remote page in various ways.
+
+
+11. Climate - https://github.com/thephpleague/climate
+
+Climate is a library for people who run PHP from the command line. It offers a collection of methods for talking to the terminal (both input and output), and also some beautifying functions for coloring and formatting. It can even draw and animate cool ASCII art.
+
+
+12. Alice - https://github.com/nelmio/alice
+
+Built on top of Faker, Alice is a library that generates fake data objects for testing. To use it you first have to define the structure of your objects and what data you want in them. Then with a simple function call Alice will transform this template into an actual object with random values.
+
+
+13. Ratchet - https://github.com/ratchetphp/Ratchet/
+
+The Ratchet library adds support for the WebSockets interface in apps with a PHP backend. WebSockets enable two-way communication between the server and client side in real time. For this to work in PHP, Ratchet has to start a separate PHP process that stays always running and asynchronously sends and receives messages.
+
+
+14. PHPMailer - https://github.com/PHPMailer/PHPMailer
+
+No PHP library collection is complete without PHPMailer. This project is backed by a huge community and is implemented in popular systems such as WordPress and Drupal, making it the safest choice for sending emails in PHP. It has SMTP support, can do HTML-based emails, and much more.
+
+
+15. Hoa - http://hoa-project.net/En/
+
+Hoa isn't actually a PHP library - it's an entire set of PHP libraries, containing all kinds of useful web development utilities. Although not all are fully documented, there are 50+ libraries right now, with new ones constantly being added. It's completely modular so you can select only the libraries you need without any clutter.
+ 
+16. CssToInlineStyles - https://github.com/tijsverkoyen/CssToInlineStyles
+
+Anyone who has tried creating HTML emails knows what a pain it is to inline all of the CSS rules. This small PHP Class does the whole job for you, saving you lots of time and nerves. Just write your styles in a regular .css file and the PHP library will use the selectors to assign them at the proper tags.
+ 
+
+17. Stringy - https://github.com/danielstjules/Stringy
+
+Library for doing all kinds of string manipulations. It offers a ton of different methods for modifying text (reverse(), htmlEncode(), toAscii() etc.) or gather information about a string (isAlphanumeric(), getEncoding(), among others). A cool thing about Stringy is that it also works with special symbols like Greek or Nordic letters;
+
+
+18. Robo - https://github.com/consolidation-org/Robo
+
+Robo is a Gulp-like task runner, only for PHP. With it you can set up automations that improve your workflow and the time it takes to build a project after making changes. Robo can run tests, compile code from preprocessors, handle version control updates, and many other useful tasks.
+
+
+19. PHP Humanizer - https://github.com/coduo/php-humanizer
+
+This library takes variables and transforms them into a more human-readable format using a set of methods. For example it can turn Roman numerals into numbers, truncate long strings, and calculate bytes to kB/MB/GB. Support for over 15 languages (the spoken kind, not programming ones).
+ 
+20. ColorExtractor - https://github.com/thephpleague/color-extractor
+
+The last item on our list is this small library for extracting colors from images. It iterates all of the pixels in a given picture and returns a palette of the colors on it sorted by total area. Developers can then use this palette to get the most dominant colors and adapt the design according to them.
+
+
+
+
+### https://tutorialzine.com/2017/01/20-awesome-php-libraries-for-early-2017
+1. Requests for PHP - https://github.com/rmccue/Requests
+A no-dependencies library that lets you send HTTP requests. It provides the needed methods for adding headers, accessing response data, handling forms, and everything else you may need, neatly packaged in a clean and easy to use API.
+ 
+2. Rinvex Country - https://github.com/rinvex/country
+Rinvex Country is a PHP package that lets developers retrieve detailed information about the countries of the world. Using the over 50 methods you can get the area of Angola, the currency of Cyprus, the native name of Namibia or even the FIFA name of Finland. There is a ton of info available and the data sources are pretty reliable.
+
+3. Botman - https://github.com/mpociot/botman
+
+A PHP library for developing messenger bots. Works with most of the popular messaging platforms including Facebook Messenger, Slack, Telegram, WeChat, and others. There is also a helpful boilerplate Laravel project available here.
+
+4. Charts - https://github.com/ConsoleTVs/Charts
+
+Laravel package for generating highly customizable charts out of datasets. The package works as a PHP wrapper for multiple built-in JavaScript chart libraries, allowing devs to create a wide variety of graphs, gauges and progressbars using only one tool.
+
+
+5. Swap - https://github.com/florianv/swap/
+
+Swap allows you to retrieve currency exchange rates from a number of services such as Fixer, Google, and Yahoo. Request responses can be easily cached and accessed later. The library is available in the form of a Laravel Package as well.
+ 
+6. Math PHP - https://github.com/markrogoyski/math-php
+
+A collection of mathematical functions and algorithms ranging from simple algebra to finances, statistics, numerical analysis and others fields. The library is modular, has a straightforward API, and doesn't require any external dependencies.
+
+
+7. PHPUnit - https://github.com/sebastianbergmann/phpunit
+
+PHPUnit is an advanced testing framework that enables teams to thoroughly test their code. Unit tests are written in standalone object-oriented classes with the help of many methods for handling assertions, dependencies, etc. A simple CLI is provided for running test and generating reports.
+
+
+8. Atoum - https://github.com/atoum/atoum
+
+A less popular testing framework we also wanted to share. Atoum offers a one-step installation precess and a relatively simple workflow, while still maintaining a ton of great features. It has a mock engine, expressive assertions, and a CLI that can execute multiple tests in parallel.
+
+9. Simple Regex Language - https://github.com/SimpleRegex/SRL-PHP
+
+A PHP implementation of the Simple Regex Language - a verbose way of writing regular expressions. The library provides multiple methods that can be chained together, forming readable and easy to understand RegEx rules. The library has ports for JavaScript and Python as well.
+ 
+10. Stash - https://github.com/tedious/Stash
+
+Stash makes it easy to speed up your code by caching the results of expensive functions or code. Certain actions, like database queries or calls to external APIs, take a lot of time to run but tend to have the same results over short periods of time. This makes it much more efficient to store the results and call them back up later.
+ 
+11. PHP VCR - https://github.com/php-vcr/php-vcr
+
+A port of the popular Ruby library for testing HTTP interactions. PHP VCR records HTTP requests and stores them in "cassettes" which can be replayed later on. A set of testing utilities are also provided, making it possible to inspect and compare recordings in detail.
+ 
+12. OAuth 2.0 Server - https://github.com/thephpleague/oauth2-server
+
+This library allows you to easily configure an OAuth 2.0 server and set up all the authentication levels needed to protect your API. It is fully standards compliant and supports all the grants defined by OAuth protocol. The Laravel Passport module is built on top of the OAuth 2.0 Server.
+ 
+13. Imagine - https://github.com/avalanche123/Imagine
+
+An image manipulation library that tries to bring together all low level PHP image processing libraries under the same object-oriented API. This allows Imagine to be used for a wide variety of tasks such as drawing, resizing, cropping, filters, effects, metadata editing, and others.
+ 
+14. MINI - https://github.com/panique/mini
+
+Extremely simple and easy to understand skeleton PHP application, providing only the most essential features every project needs. It does not strive to be a do-it-all framework like Laravel, but due to it's simplicity MINI can be used for getting smaller apps up and running in no time.
+ 
+15. AWS SDK - https://github.com/aws/aws-sdk-php
+
+The official PHP library for working with Amazon Web Services. The SDK makes it easy to connect AWS with any PHP project and access all the various available services. There is also a useful Laravel wrapper which can be found here.
+
+
+16. Purl - https://github.com/jwage/purl
+
+Lightweight PHP library for working with URLs. With Purl you can compose complex paths attribute by attribute, extract data from URLs, manipulate queries, recognize URLs in strings, and much more.
+ 
+
+17. Daux.io - https://github.com/justinwalsh/daux.io
+
+Documentation generator that uses a simple folder structure and Markdown files to create responsive documentation websites. Daux.io has automatic syntax highlighting, 4 theming options, Bootstrap HTML for easy customization, navigation with readable URLs, and many other goodies.
+ 
+18. Dompdf - https://github.com/dompdf/dompdf
+
+Dompdf is a PDF generator that takes regular HTML markup and converts it to .pdf files. It understands most CSS rules, which can be fed in-line or via an external stylesheet.
+ 
+19. Instaphp - https://github.com/sesser/Instaphp
+
+Non-official library for accessing the Instagram API. It provides developers with an easy way to authenticate their app and get access to various Instagram data endpoints including images, users, likes, comments, and tags.
+
+20. Latitude - https://github.com/shadowhand/latitude
+
+Zero-dependencies library for building SQL queries using chainable methods. It supports most query types and works well with MySQL, Postgres, SQL Server, and other databases. There are also built-in escaping helpers for protecting against SQL injection.
+ 
+ 
+ 
