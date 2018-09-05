@@ -1,1 +1,75 @@
 
+1. 구조만들기
+    my-project/
+        src/     -- 소스 코드
+        tests/   -- 테스트 코드
+        bin/     -- 실행 파일이 있는 경우
+        public/  -- 웹 프로젝트인 경우
+            index.php
+            .htaccess
+        composer.json
+        phpunit.xml.dist
+        .gitignore
+        readme.md
+
+2. phpunit 설치
+composer require --dev phpunit/phpunit
+
+3. composer.json 작성
+    {
+      "name": "codeigniter/framework",
+      "description": "The CodeIgniter framework",
+      "type": "ozlang project",
+      "homepage": "https://ozlang.pagodastar.com",
+      "license": "MIT",
+      "support": { 
+        "source": "https://github.com/bcit-ci/CodeIgniter"
+      },
+      "require": {
+        "php": ">=7.1", 
+        "psr/log": "^1.0"
+      },
+      "autoload": {
+        "psr-4": {
+          "ozlang\\": "src"
+        }
+      },
+      "require-dev": {
+        "phpunit/phpunit": ">=7.3"
+      },
+      "autoload-dev": {
+        "psr-4": {
+          "ozlang\\Test\\": "tests"
+        }
+      }
+    }
+
+4. autoload 규칙 생성
+composer dump-autoload
+
+
+5. phpunit.xml.dist 작성
+    <?xml version="1.0" encoding="UTF-8"?>
+    <phpunit colors="true"
+             bootstrap="vendor/autoload.php"
+             stderr="true">
+        <testsuites>
+            <testsuite name="all">
+                <directory suffix="Test.php">tests/</directory>
+            </testsuite>
+        </testsuites>
+    </phpunit>
+
+6. phan 사용하기
+    https://github.com/nikic/php-ast 에서 확장패키지 설치
+    composer require --dev etsy/phan 
+    사용 : vendor/bin/phan -l src
+    
+    
+7. 테스트와 코드 작성
+
+
+
+
+
+
