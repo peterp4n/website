@@ -1,0 +1,235 @@
+
+<meta http-equiv="content-Type" content="text/html;charset=utf-8" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<div id="deliveryColl" class="wid_n">
+    <div class="coll_tit">
+        <h2 class="tit">택배 및 항공화물 조회</h2>
+        <div class="mg_expander"> <span class="f_nb">업체명 선택 후, 송장번호를 입력해주세요.</span> </div>
+    </div>
+    <div class="coll_cont">
+        <div class="mg_cont">
+            <div class="wrap_inquiry">
+                <div class="box_search">
+                    <form name="kocn_mm" method="post" target="_blank">
+                        <fieldset>
+                            <legend>택배 및 항공화물 조회</legend> 
+							<input type="hidden" name="InvNo"> 
+							<input type="hidden" name="f_slipno"> 
+							<input type="hidden" name="sheetno"> 
+							<input type="hidden" name="sendno"> 
+							<input type="hidden" name="billno"> 
+							<input type="hidden" name="tc"> 
+							<input type="hidden" name="cust_id"> 
+							<input type="hidden" name="invc_no"> 
+							<input type="hidden" name="slipnom"> 
+							<input type="hidden" name="gubun"> 
+							<input type="hidden" name="slipno"> 
+							<input type="hidden" name="slipno_salecd"> 
+							<input type="hidden" name="iv_no"> 
+							<input type="hidden" name="search_item_no"> 
+							<input type="hidden" name="mode" value="SEARCH"> 
+							<input type="hidden" name="search_type" value="1"> 
+							<input type="hidden" name="searchMethod" value="I"> 
+							<input type="hidden" name="bl_num"> 
+							<input type="hidden" name="dtdShtno"> 
+							<input type="hidden" name="sid1"> 
+							<input type="hidden" name="wbl_num"> 
+							<input type="hidden" name="hawb_no">
+                            <dl class="info_delivery"> 
+								<dt class="tit">업체명</dt>
+                                <dd class="cont"> 
+										<select id="_jsDeliveryCorpListHiddenSelBox" name="_jsDeliveryCorpListHiddenSelBox" class="select_box">
+                                        <option value="0">선택해 주세요</option>
+                                        <option value="1">경동택배</option>
+                                        <option value="2">대한항공</option>
+                                        <option value="3">로젠택배</option>
+                                        <option value="4">범한판토스</option>
+                                        <option value="5">우체국택배</option>
+                                        <option value="6">일양로지스택배</option>
+                                        <option value="7">천일택배</option>
+                                        <option value="8">한의사랑택배</option>
+                                        <option value="9">한진택배</option>
+                                        <option value="10">롯데택배(구 현대택배)</option>
+                                        <option value="11">호남택배</option>
+                                        <option value="12">CJ 대한통운택배</option>
+                                        <option value="13">CVSnet편의점택배</option>
+                                        <option value="14">DHL택배</option>
+                                        <option value="15">EMS</option>
+                                        <option value="16">FedEx택배</option>
+                                        <option value="17">드림택배(구 KG로지스)</option>
+                                        <option value="18">OCS택배</option>
+                                        <option value="19">TNT Express</option>
+                                        <option value="20">UPS택배</option>
+                                        <option value="21">GSI Express</option>
+                                        <option value="22">SLX</option>
+                                        <option value="23">CU 편의점택배</option>
+                                        <option value="24">세방</option>
+                                        <option value="25">우리한방택배</option>
+                                        <option value="26">홈픽택배</option>
+                                    </select> </dd>
+                            </dl>
+                            <dl class="info_delivery delivery_num"> <dt class="tit">송장번호</dt>
+                                <dd class="cont"> 
+								<input id="kocn_number" type="text" class="inp_txt" style="width:241px" name="kocn_number" value="예)1234567890"> 
+								<input type="submit" class="btn_bus btn_inquiry" value="조회"> 
+								</dd>
+                            </dl>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <dl class="collDl list_relation"> 
+				<dt class="g_tit">관련정보</dt>
+                <dd class="con"> 
+					<a class="stit" href="?w=tot&q=%EC%9A%B0%ED%8E%B8%EB%B2%88%ED%98%B8" onclick='smartLog(this, "s=TO&d=direct_26&a=ABQK&dc=CQX&pg=1&r=1&p=2&rc=3", event); '>우편번호</a>	
+					<span class="vline">|</span> 
+					<a class="stit" href="?w=tot&q=%EC%A7%80%EC%97%AD%EB%B2%88%ED%98%B8" onclick='smartLog(this, "s=TO&d=direct_26&a=ABQK&dc=CQX&pg=1&r=2&p=2&rc=3", event); '>지역번호</a>
+				</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+        var _jsDeliveryCompanyArr = [
+            ["0", "선택해주세요"],
+            ["1", "경동택배", {
+                cpName: "경동",
+                url: "http://kdexp.com/basicNewDelivery.kd?barcode=##NUM##"
+            }],
+            ["2", "대한항공", {
+                cpName: "대한항공",
+                url: "http://cargo.koreanair.com/ecus/trc/servlet/TrackingServlet?pid=5&version=kor&menu1=m1&menu2=m01-1&awb_no=##NUM##"
+            }],
+            ["3", "로젠택배", {
+                cpName: "로젠",
+                url: "http://www.ilogen.com/iLOGEN.Web.New/TRACE/TraceView.aspx?gubun=slipno&slipno=##NUM##"
+            }],
+            ["4", "범한판토스", {
+                cpName: "범한판토스",
+                url: "http://www.epantos.com/jsp/gx/tracking/tracking/trackingInquery.jsp?refNo=##NUM##"
+            }],
+            ["5", "우체국택배", {
+                cpName: "우체국",
+                url: "http://service.epost.go.kr/trace.RetrieveRegiPrclDeliv.postal?sid1=##NUM##"
+            }],
+            ["6", "일양로지스택배", {
+                cpName: "일양로지스",
+                url: "http://www.ilyanglogis.com/functionality/tracking_result.asp?hawb_no=##NUM##"
+            }],
+            ["7", "천일택배", {
+                cpName: "천일",
+                url: "http://www.chunil.co.kr/HTrace/HTrace.jsp?transNo=##NUM##"
+            }],
+            ["8", "한의사랑택배", {
+                cpName: "한의사랑",
+                url: "http://www.hanips.com/html/sub03_03_1.html?logicnum=##NUM##"
+            }],
+            ["9", "한진택배", {
+                cpName: "한진",
+                url: "http://www.hanjin.co.kr/Delivery_html/inquiry/result_waybill.jsp?wbl_num=##NUM##"
+            }],
+            ["10", "롯데택배(구 현대택배)", {
+                cpName: "롯데",
+                url: "http://www.hlc.co.kr/personalService/tracking/06/tracking_goods_result.jsp?InvNo=##NUM##"
+            }],
+            ["11", "호남택배", {
+                cpName: "호남",
+                url: "http://honamlogis.co.kr/page/?pid=tracking_number&SLIP_BARCD=##NUM##"
+            }],
+            ["12", "CJ 대한통운택배", {
+                cpName: "CJ대한통운",
+                url: "https://www.doortodoor.co.kr/parcel/doortodoor.do?fsp_action=PARC_ACT_002&fsp_cmd=retrieveInvNoACT&invc_no=##NUM##"
+            }],
+            ["13", "CVSnet편의점택배", {
+                cpName: "CVSNET편의점",
+                url: "http://www.cvsnet.co.kr/reservation-inquiry/delivery/index.do?dlvry_type=domestic&srch_type=01&invoice_no=##NUM##"
+            }],
+            ["14", "DHL택배", {
+                cpName: "DHL",
+                url: "http://www.dhl.co.kr/content/kr/ko/express/tracking.shtml?brand=DHL&AWB=##NUM##"
+            }],
+            ["15", "EMS", {
+                cpName: "EMS",
+                url: "http://service.epost.go.kr/trace.RetrieveEmsRigiTraceList.comm?POST_CODE=##NUM##"
+            }],
+            ["16", "FedEx택배", {
+                cpName: "FEDEX",
+                url: "http://www.fedex.com/Tracking?ascend_header=1&clienttype=dotcomreg&cntry_code=kr&language=korean&tracknumbers=##NUM##"
+            }],
+            ["17", "드림택배(구 KG로지스)", {
+                cpName: "드림",
+                url: "http://www.idreamlogis.com/delivery/delivery_result.jsp?item_no=##NUM##"
+            }],
+            ["18", "OCS택배", {
+                cpName: "OCS",
+                url: "http://www.ocskorea.com/online_bl_multi.asp?mode=search&search_no=##NUM##"
+            }],
+            ["19", "TNT Express", {
+                cpName: "TNTExpress",
+                url: "http://www.tnt.com/webtracker/tracking.do?respCountry=kr&respLang=ko&searchType=CON&cons=##NUM##"
+            }],
+            ["20", "UPS택배", {
+                cpName: "UPS",
+                url: "http://wwwapps.ups.com/WebTracking/track?track=yes&loc=ko_kr&trackNums=##NUM##"
+            }],
+            ["21", "GSI Express", {
+                cpName: "GSI",
+                url: "http://www.gsiexpress.com/track_pop.php?track_type=ship_num&query_num=##NUM##"
+            }],
+            ["22", "SLX", {
+                cpName: "SLX",
+                url: "http://slx.co.kr/delivery/delivery_number.php?param1=##NUM##"
+            }],
+            ["23", "CU 편의점택배", {
+                cpName: "CU",
+                url: "https://www.cupost.co.kr/postbox/delivery/localResult.cupost?invoice_no=##NUM##"
+            }],
+            ["24", "세방", {
+                cpName: "세방",
+                url: "https://delivery.sebang.com/sdelivery/guest/trace/trace.xhtml?DISPATCH_NOTE_NO=##NUM##"
+            }],
+            ["25", "우리한방택배", {
+                cpName: "우리한방",
+                url: "http://www.realsystem.co.kr/wooritb/search/s_search.asp?f_slipno=##NUM##"
+            }],
+            ["26", "홈픽택배", {
+                cpName: "홈픽",
+                url: "http://tracking.zoommaok.com/zoomma/tracking.php?invoice=##NUM##"
+            }]
+        ];
+        var $inputValues = $("#kocn_number");  
+        $inputValues.on("focus", function() {
+            var checkString = ["예)1234567890", "11자리 숫자만 입력", "예)PKR000249650", "예)1Z04845XYN48937807"];
+            if (checkString.indexOf(this.value) != -1) {
+                this.value = "";
+            }
+        });
+        $("[name='kocn_mm']").submit(function(event) {
+            var num = $inputValues.val();
+            var kocn_1 = $("#_jsDeliveryCorpListHiddenSelBox option:selected").val();
+            num.replace('-', '');
+            if (kocn_1 === "0" || num == "") {
+                alert('업체명과 송장번호를 확인해주세요.');
+                return false;
+            }
+            var cpName = _jsDeliveryCompanyArr[kocn_1][2].cpName;
+            var url = _jsDeliveryCompanyArr[kocn_1][2].url;
+            if (url.match(/##NUM##/)) {
+                if (cpName == "CVSNET편의점") {
+                    url = url.replace(/##NUM##/, num);
+                    this.method = "post";
+                    this.slipno.value = num;
+                } else {
+                    window.open(url.replace(/##NUM##/, num), "kocnss");
+                    return false;
+                }
+            } else {
+                if (cpName == "대신") {
+                    this.method = "GET";
+                    this.billno.value = num;
+                }
+            }
+            this.action = url;
+        }); 
+</script>
