@@ -1,6 +1,12 @@
+0. ssh auto login and aws credentials 
+$ aws configure
+AWS Access Key ID [None]: Access ID
+AWS Secret Access Key [None]: Access Key
+Default region name [None]: ap-northeast-2
+Default output format [None]: json
 
 1. 설치
-composer global require laravel/envoy
+$ composer global require laravel/envoy
 
 2. path 설정
 export PATH=~/.composer/vendor/bin:$PATH
@@ -14,4 +20,5 @@ export PATH=~/.composer/vendor/bin:$PATH
 @endtask
   
 4. 배포
-envoy run 작업명
+$ envoy run 작업명
+
