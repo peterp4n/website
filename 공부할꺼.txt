@@ -1,0 +1,62 @@
+
+TDD
+BDD
+PHPUnit
+PHPDoc
+Traits 
+http://php.net/manual/kr/language.oop5.php
+서버 프로비저닝
+
+https://codeception.com/quickstart
+
+codesniffer
+envoy
+composer install project
+phpunit
+Monolog
+php-cs-fixer(PHP Coding Standard Fixer)
+
+The league - https://thephpleague.com/ 
+
+####. 개발시 Checklis - http://phppackagechecklist.com/#1,2,3,4,5,6,7,8,9,10,11,12,13,14
+1. PSR-2, PSR-4
+   http://cs.sensiolabs.org/
+   https://github.com/squizlabs/PHP_CodeSniffer
+2. Composer, Packagist  
+   https://getcomposer.org/
+   https://packagist.org/
+3. unit tests
+   https://phpunit.de/
+   http://www.phpspec.net/
+   http://behat.org/
+   http://atoum.org/
+   http://codeception.com/
+4. 주석 문석
+   http://www.phpdoc.org/
+5. 유의적 버전을 사용할 것 
+   http://semver.org/lang/ko/
+6. travis-ci
+
+### https://tutorialzine.com/2016/08/20-awesome-php-libraries-for-summer-2016
+1. Monolog - https://github.com/Seldaek/monolog
+2. PHPExcel - https://github.com/PHPOffice/PHPExcel
+3. PHP-ML - https://github.com/php-ai/php-ml
+
+7. PHPUnit - https://github.com/sebastianbergmann/phpunit
+13. Ratchet - https://github.com/ratchetphp/Ratchet/
+14. PHPMailer - https://github.com/PHPMailer/PHPMailer 
+ 
+7. Guzzle - https://github.com/guzzle/guzzle
+
+Guzzle is one of the best HTTP clients out there. It can handle almost any HTTP task that you throw at it: synchronous and asynchronous requests, HTTP cookies, streaming of large uploads and downloads. Working with Guzzle is really easy and the docs are well written with lots of examples and detailed explanations.
+
+Get started with Docker Compose
+
+Step 1: Setup. ...
+Step 2: Create a Dockerfile. ...
+Step 3: Define services in a Compose file. ...
+Step 4: Build and run your app with Compose. ...
+Step 5: Edit the Compose file to add a bind mount. ...
+Step 6: Re-build and run the app with Compose. ...
+Step 7: Update the application. ...
+Step 8: Experiment with some other commands.
