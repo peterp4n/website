@@ -1,3 +1,7 @@
+0. 참조
+https://github.com/chiraggude/awesome-laravel
+
+
 1. composert install
 
 2. # composer create-project --prefer-dist laravel/laravel /home/hosting/laravel
