@@ -38,3 +38,8 @@ https://github.com/chiraggude/awesome-laravel
    RewriteCond %{REQUEST_FILENAME} !-f
    RewriteRule ^ index.php [L]
    *
+   
+### laravel simple 사이트
+https://jigsaw.tighten.co
+https://github.com/tightenco/jigsaw
+   
