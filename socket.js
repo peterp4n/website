@@ -65,11 +65,26 @@ io.on('connect', function(socket) {
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
-    var socket = io();
+$(document).ready(function(){
 
-    socket.on('connect', function() {
-       console.log('서버와 연결');
-    });    
+	data = {};
+
+	var socket = io.connect('http://13.124.52.111:9000/'); 
+
+	socket.emit('key', data); 
+
+	socket.on('opt', function(){
+		socket.disconnect();
+	});  
+
+	socket.on('opt', function(data){ 
+	}); 
+
+	//창닫을때 전화기 대기 로그아웃 시킨다.
+	window.onbeforeunload = function () { 
+	}
+}); 
+ 
 
 </script>
 
