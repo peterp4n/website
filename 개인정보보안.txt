@@ -1,0 +1,5 @@
+1. 홈페이지 개인정보 노출방지 안내서
+https://www.kisa.or.kr/public/laws/laws3_View.jsp?cPage=1&mode=view&p_No=259&b_No=259&d_No=79&ST=T&SV=
+
+2. 기술안내서 가이드
+https://www.kisa.or.kr/public/laws/laws3.jsp
