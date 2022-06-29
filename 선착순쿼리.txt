@@ -1,0 +1,28 @@
+## 선착순을 위한 로칙
+
+count = 최대인원;
+
+try {
+
+  START TRANSACTION
+
+  SELECT COUNT(*) CNT
+  FROM table
+  WHERE 조건
+  FOR UPDATE
+
+  if(CNT >= count) {
+    ROLLBACK
+    $msg = '선착순 마감';
+    return false;
+
+  } else {
+    COMMIT
+  }
+
+} catch {
+  ROLLBACK
+  $msg = '예상외의 오류';
+  return false;
+}
+
